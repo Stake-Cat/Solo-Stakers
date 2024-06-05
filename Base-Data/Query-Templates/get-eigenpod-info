@@ -1,0 +1,16 @@
+-- Dune analytics query for eigenpod info
+-- Indexing PodDeployed Events from contract '0x91E677b07F7AF907ec9a428aafA9fc14a0d3A338'
+-- Correcting the query to use proper hexadecimal comparisons
+SELECT
+  block_number AS evt_block_number,
+  "index" AS evt_index,
+  contract_address,
+  tx_hash AS evt_tx_hash,
+  TRY_CAST(topic1 AS VARCHAR) AS eigenPod,
+  TRY_CAST(topic2 AS VARCHAR) AS podOwner
+FROM ethereum.logs
+WHERE
+  contract_address = FROM_HEX('91E677b07F7AF907ec9a428aafA9fc14a0d3A338')
+  AND topic0 = FROM_HEX('21c99d0db02213c32fff5b05cf0a718ab5f858802b91498f80d82270289d856a')
+ORDER BY
+  block_number DESC;

@@ -1,0 +1,22 @@
+WITH ContractInteractions AS (  
+    SELECT DISTINCT "from" as address  
+    FROM ethereum."transactions"  
+    WHERE LENGTH(data) > 2 -- Excluding '0x' and empty inputs  
+    AND "to" != 0x00000000219ab540356cBB839Cbe05303d7705Fa -- Excluding the beacon chain contract  
+)  
+  
+SELECT  
+  t."from" as address,  
+  SUM(t.value / 1e18) as deposited_eth,  
+  COUNT(t."from") as transaction_count  
+FROM  
+  ethereum."transactions" t  
+JOIN ContractInteractions ci ON t."from" = ci.address  
+WHERE  
+  t."to" = 0x00000000219ab540356cBB839Cbe05303d7705Fa  
+GROUP BY  
+  t."from"  
+HAVING  
+  COUNT(t."from") >= 1  
+ORDER BY  
+  deposited_eth DESC;

@@ -4,6 +4,10 @@
 
 **Latest Snapshot: Dencun network upgrade 2024/03/13**
 
+Forked from GLCNI: This list will be maintained here going forward, GLCstaked is a contributor to this repo.
+
+Further research on Solo stakers based on findings from the repository, see [here:](https://www.stakecat.space/blog/solo-stakers-arent-going-away)
+
 ----
 ## What is a Solo Staker
 
@@ -78,7 +82,7 @@ _from Rated: “Solo stakers fund all (or some if in Rocketpool) of the stake th
 
 Rocketpool node accounts are normal Ethereum addresses, which can be used for token interactions however act as a sudo cold wallet intended only for staking/unstaking interactions with the Rocketpool CLI, it is advised that withdrawal addresses be used.
 
-**34,668 Minipools** (rocketpool validators) deployed with **2,642 node operator withdrawal addresses** belonging to Solo Stakers using Rocketpool, at “Dencun” network upgrade **2024/03/13** epoch: 26958.
+**34,668 Minipools** (rocketpool validators) deployed with **2,642 node operator withdrawal addresses** belonging to Solo Stakers using Rocketpool, at date **2024/04/10**
 
 ### Eigenpod  Solo Stakers
 
@@ -206,13 +210,13 @@ curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[
 
 Data source: beaconcha.in API or beacon node
 
-Using Deposit addresses from `Solo-Staker-A` generate all associated validator `public-keys` with the following query <link to query reference>
+Using Deposit addresses from `Solo-Staker-A` generate all associated validator `public-keys` with the query script `Query-Templates/1-get-validator-keys.sh`
 
-Using `public-keys`metadata such as: `.block_number, .block_ts, .tx_hash, .withdrawal_credentials, .status, .exitepoch`  can be obtained with the following queries < link to query reference>
+Using `public-keys` from `Query 1` metadata such as: `.block_number, .block_ts, .tx_hash, .withdrawal_credentials, .status, .exitepoch`  can be obtained with the other query scripts in `Query-Templates/`
 
 This data in then placed into the Metadata sheet, which is arranged in the following format:
 (Deposit address, validator public key, deposit tx, date, status, exit date, withdrawal address.)
 
-To see full list of api’s see beaconcha.in docs <LINK>
+To see full list of api’s see beaconcha.in [docs](https://beaconcha.in/api/v1/docs/index.html)
 
-The same is done for Rocketpool but using Rocketpool Node Account addresses from <query link `rpl-accounts+minipool`>
+The same is done for Rocketpool but using Rocketpool Node Account addresses, see `Query-Templates/rocketpool-query-templates`

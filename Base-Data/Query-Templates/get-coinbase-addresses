@@ -1,0 +1,7 @@
+-- Dune analytics query for coinbase addresses
+-- using 'hildobby' dataset
+SELECT
+  depositor_address
+FROM staking_ethereum.entities
+WHERE
+  entity = 'Coinbase'

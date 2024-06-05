@@ -1,0 +1,20 @@
+# Get withdrawal addresses
+
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[].withdrawalAddress' | sort | uniq > output-wid-add.txt
+
+
+# Get node accounts with withdrawal addresses
+
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[] | "\(.address) \(.withdrawalAddress)"' > output-add-with-wid-add.txt
+
+# get the full output 
+
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" > output-full.txt
+
+# get all minipools under account
+
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[] | "\(.address) \(.minipoolPubKeys[])"' > output-address-minipools.txt
+
+# get all minipools count
+
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[] | "\(.address) \(.minipoolPubKeys | length)"' > output-address-minipool-count.txt
