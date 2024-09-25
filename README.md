@@ -2,7 +2,11 @@
 
 **This repository  is intended to identify addresses under the  control of Solo Stakers  and for projects that wish to target Solo Stakers for incentives or onboard actors capable of supporting decentralized node operations.**
 
-**Latest Snapshot: Dencun network upgrade 2024/03/13**
+**Latest Snapshot: Merge +2 Years, 2024/09/15**
+
+**Note: Entities tags are being improved/updated, Solo staker A was not updated until entity tags are improved as the profile is too large, Solo Staker B (higher confidence) list is updated.** 
+
+Previous Snapshot: Dencun network upgrade 2024/03/13
 
 Forked from GLCNI: This list will be maintained here going forward, GLCstaked is a contributor to this repo.
 
