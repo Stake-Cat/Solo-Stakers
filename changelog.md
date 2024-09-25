@@ -60,3 +60,24 @@ Identified `invalid` validators.
 **Misidentified Solo Staker Added**
 • address: `0xBD9d540f6a671d4280D81127De555a7d8ce7E204` added to solo-staker-a + b, previously misidentified as Entity.
 
+## september-2024 - Update
+### Fixes/Changes/updates
+Updating Solo Stakers for 15/09/24 snapshot Merge Network upgrade +2yrs, 'Solo Staker B' higher confidence solo staker identification is used for this update and Solo Staker A is ignored while Entity Tags are improved.
+
+**Updated 'Solo-Staker-B' to 15/09/24 Snapshot**
+**Updated 'Gnosischain-Solo-Stakers' to 15/9/24 Snapshot**
+**Updated 'Rocketpool-Solo-Stakers' to 15/9/24 Snapshot**
+
+**False Positives, Removed from Entities, Added to 'Solo Staker A (+ B )'**
+```
+0x399e0Ae23663F27181Ebb4e66Ec504b3AAB25541
+0x52d84b5b527c68a401eb849935b722f511cd7418
+0xe94144f5672f48d0d8365bb54bb394d283f87caf
+0xb6d77f9dcb27a25be5ae629029c30797b7df9f3e
+0x2f1a2382a4541cd31e83b905c0b29ebd91fc28d1
+0x010af29077a8520cc3f55be2031d7e37808ba137
+```
+
+**Updated Entity Tags, See 'Entity-List'**
+Removed corresponding addresses 'Solo-Staker-A'
+Removed corresponding addresses 'Solo-Staker-B'
