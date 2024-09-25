@@ -62,10 +62,13 @@ Identified `invalid` validators.
 
 ## september-2024 - Update
 ### Fixes/Changes/updates
+
 Updating Solo Stakers for 15/09/24 snapshot Merge Network upgrade +2yrs, 'Solo Staker B' higher confidence solo staker identification is used for this update and Solo Staker A is ignored while Entity Tags are improved.
 
 **Updated 'Solo-Staker-B' to 15/09/24 Snapshot**
+
 **Updated 'Gnosischain-Solo-Stakers' to 15/9/24 Snapshot**
+
 **Updated 'Rocketpool-Solo-Stakers' to 15/9/24 Snapshot**
 
 **False Positives, Removed from Entities, Added to 'Solo Staker A (+ B )'**
@@ -79,5 +82,7 @@ Updating Solo Stakers for 15/09/24 snapshot Merge Network upgrade +2yrs, 'Solo S
 ```
 
 **Updated Entity Tags, See 'Entity-List'**
+
 Removed corresponding addresses 'Solo-Staker-A'
+
 Removed corresponding addresses 'Solo-Staker-B'
