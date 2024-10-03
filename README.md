@@ -210,6 +210,15 @@ All unique “withdrawal addresses” associated with RocketPool "node accounts"
 curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[] | "\(.address) \(.withdrawalAddress)"' > output-add-with-wid-add.txt  
 ```
 
+Invalid node accounts (no minipools) should be removed, if `<node-account>=0` the node account has no valid minipools. 
+
+```
+curl -Ss --compressed "https://rocketscan.io/api/mainnet/nodes/list" | jq -r '.[] | "\(.address) \(.minipoolPubKeys | length)"' > output-address-minipool-count.txt
+```
+
+AllNodes identified via Grafitti example: "Rocket Pool ⚡️Allnodes"
+
+
 ## Step 6: Metadata
 
 Data source: beaconcha.in API or beacon node
