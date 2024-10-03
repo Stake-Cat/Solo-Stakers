@@ -60,7 +60,7 @@ Identified `invalid` validators.
 **Misidentified Solo Staker Added**
 • address: `0xBD9d540f6a671d4280D81127De555a7d8ce7E204` added to solo-staker-a + b, previously misidentified as Entity.
 
-## september-2024 - Update
+## september-2024 - Update - 2024-09-25
 ### Fixes/Changes/updates
 
 Updating Solo Stakers for 15/09/24 snapshot Merge Network upgrade +2yrs, 'Solo Staker B' higher confidence solo staker identification is used for this update and Solo Staker A is ignored while Entity Tags are improved.
@@ -86,3 +86,10 @@ Updating Solo Stakers for 15/09/24 snapshot Merge Network upgrade +2yrs, 'Solo S
 Removed corresponding addresses 'Solo-Staker-A'
 
 Removed corresponding addresses 'Solo-Staker-B'
+
+## RPL-invalid - Update 2024-10-03
+### Fixes/Changes/updates
+
+**Removed Invalid Rocketpool node accounts**
+
+Node Accounts identified that created and registered node account with rocketpool but have yet to create a minipool (valid beacon chain deposit). 126 node accounts discovered and associated withdrawal addresses removed.
