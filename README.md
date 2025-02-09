@@ -54,6 +54,17 @@ Rocketpool  node operators:  deposits for  “minipools” are via smart contrac
 
 Abyss Finance users: work is being done to identify Solo Stakers from the Entities that use the contract to make multiple deposits in one transaction. Issue #10
 
+## Appeals
+
+**If you are a Solo Staker and your address is missing, Join Stakers Union to appeal and get added in on regular updates.**
+
+Example: Abyss Finance Depositors, All Nodes (Former) Users
+NOTE: you can also join Stakers Union to get added to List B instead of A.
+
+Stakers Union is a collective of solo stakers to empowering individual stakers and preserve decentralization. 
+Website: https://www.stakersunion.com/ 
+Twitter: https://x.com/stakersunion 
+
 ## How to Use Solo Stakers
 
 **List A or List B**
