@@ -93,3 +93,13 @@ Removed corresponding addresses 'Solo-Staker-B'
 **Removed Invalid Rocketpool node accounts**
 
 Node Accounts identified that created and registered node account with rocketpool but have yet to create a minipool (valid beacon chain deposit). 126 node accounts discovered and associated withdrawal addresses removed.
+
+## Metadata-2024 - Update 2025-02-09
+### Fixes/Changes/updates
+
+**Add metadata for solo stakers for latest snapshot**
+
+**Removed Duplicate addresses in Solo B**
+
+**Additions to README**
+Adding Appeals Section
