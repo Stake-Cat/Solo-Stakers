@@ -19,7 +19,7 @@ Further research on Solo stakers based on findings from the repository, see [her
 
 ‘Liquid’, ‘managed’ or ‘custodial’ staking where entities stake on behalf of users are centralizing to the network as stake is concentrated to a few entities, also in other factors such as hardware/geographic distribution/client diversity.
 
-For more detail see this [article from Nixo Ethstaker]([https://paragraph.xyz/@ethstaker/define-solo-staker](https://paragraph.xyz/@ethstaker/define-solo-staker))
+For more detail see this [article from Nixo Ethstaker]([https://paragraph.xyz/@ethstaker/define-solo-staker](https://paragraph.xyz/@ethstaker/define-solo-staker)
 
 ## Intent
 
