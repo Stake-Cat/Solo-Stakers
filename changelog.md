@@ -103,3 +103,6 @@ Node Accounts identified that created and registered node account with rocketpoo
 
 **Additions to README**
 Adding Appeals Section
+
+## Stakers Union Appeals - 2025-05-15
+- Added Stakers Union appeal addresses to `Solo-Stakers-A` and `Solo-Stakers-B` (verified submissions)
