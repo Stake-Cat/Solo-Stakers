@@ -1,1 +1,0 @@
-Combined list for checking deposit address against list on website. (https://stakecat.space)
